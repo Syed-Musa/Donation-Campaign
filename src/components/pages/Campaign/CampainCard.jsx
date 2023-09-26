@@ -1,9 +1,30 @@
+import swal from "sweetalert";
 
 const CampainCard = ({campaign}) => {
 
     const {id, discrippicture, category, discription, price, btn_color} = campaign || {}
+
     const handleAddToDonate = ()=>{
-      console.log(campaign)
+      const addedDonateArrays = [];
+
+      const donateItem = JSON.parse(localStorage.getItem("text"));
+      if(!donateItem){
+          addedDonateArrays.push(campaign);
+          localStorage.setItem('text', JSON.stringify(addedDonateArrays));
+          swal("Good job!", "Your Donation has successfully!", "success");
+
+      }else{
+
+        const isExits = donateItem.find(campaign => campaign.id == id);
+
+        if(!isExits){
+          addedDonateArrays.push(...donateItem, campaign);
+          localStorage.setItem('text', JSON.stringify(addedDonateArrays));
+          swal("Good job!", "Your Donation has successfully!", "success");
+        }else{
+          swal("Sorry!", "Your Donation is already exit!", "error");
+        }        
+      }
     }
 
   return (
