@@ -4,12 +4,12 @@ import Banner from "../../Header/Banner/Banner";
 
 const Home = () => {
 
-    const campaign = useLoaderData();
+    const campaigns = useLoaderData();
 
     return (
         <div>
             <Banner></Banner>
-            <Campaigns campaign ={campaign}></Campaigns>
+            <Campaigns campaigns ={campaigns}></Campaigns>
         </div>
     );
 };
