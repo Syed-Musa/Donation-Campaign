@@ -34,7 +34,7 @@ const CampainCard = ({campaign}) => {
         <img className="w-[1200px] h-[700px] object-cover" src={discrippicture} alt="" />
       </div>
       
-      <div className=" -absolute bottom-0 bg-[#00000080] hero-overlay opacity-90 w-[1200px] p-3">
+      <div className=" -absolute bottom-0 bg-[#00000080] hero-overlay opacity-50 w-[1200px] p-3">
         <button onClick={handleAddToDonate} className=" btn text-white" style={{backgroundColor: btn_color}}>Donate{price}</button>
       </div>
 
