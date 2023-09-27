@@ -31,10 +31,10 @@ const CampainCard = ({campaign}) => {
   return (
     <div>
       <div className="relative">
-        <img className="w-[1200px] h-[700px] object-cover" src={discrippicture} alt="" />
+        <img className="w-[1200px] lg:h-[700px] object-cover" src={discrippicture} alt="" />
       </div>
       
-      <div className=" -absolute bottom-0 bg-[#00000080] hero-overlay opacity-50 w-[1200px] p-3">
+      <div className=" -absolute bottom-0 bg-[#00000080] hero-overlay opacity-50 w-[340px] lg:w-[1200px] p-3">
         <button onClick={handleAddToDonate} className=" btn text-white" style={{backgroundColor: btn_color}}>Donate{price}</button>
       </div>
 
@@ -42,7 +42,7 @@ const CampainCard = ({campaign}) => {
         <h2 className="text-3xl font-bold py-5 ">{category}</h2>
         
       </div >
-      <p className="w-[1200px]">{discription}</p>
+      <p className=" lg:w-[1200px]">{discription}</p>
       
     </div>
   );
