@@ -1,8 +1,8 @@
-# React + Vite
+1. Add at least 3 Project features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+* Firstly, I was start an project before the basic setup and installed in important cdn in react router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Secondly, I started an project in donate campaign in all items. Before creating the project i created the fake data in json file. Then all data section, navbar section, donation section created in this project. 
+
+* Finally, Even after doing so much in the project. But to much problem in middle time, After solving the problem and i was finish the project

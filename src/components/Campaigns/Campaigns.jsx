@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import CampaignsCard from "./CampaignsCard";
 
 const Campaigns = ({campaigns}) => {

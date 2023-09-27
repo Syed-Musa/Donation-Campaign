@@ -11,6 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <Campaigns campaigns ={campaigns}></Campaigns>
         </div>
+        
     );
 };
 

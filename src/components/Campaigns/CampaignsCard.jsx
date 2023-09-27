@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
 const CampaignsCard = ({campaigns}) => {
@@ -6,7 +7,7 @@ const CampaignsCard = ({campaigns}) => {
 
   return (
     <div>
-      <Link to={`/campaign/${id}`}>
+      <Link to={`/campaign/${id}`} state={category}>
       <div className="card bg-base-100 shadow-xl">
         <figure>
           <img src={picture} alt="Shoes"/>

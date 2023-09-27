@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const DonationCard = ({campaign}) => {
 
   const { discrippicture, title, category, category_bg, card_bg, price, text_color, btn_color} = campaign || {}
